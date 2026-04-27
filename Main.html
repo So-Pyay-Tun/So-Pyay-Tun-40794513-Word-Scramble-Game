@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Word Scramble Game</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="Main.css">
+
+    <!-- Scripts -->
+     <script src="Js/words.js" defer></script>
+    <script src="Js/Main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+       <source src="bg-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="bg">
+
+        <!-- Navigation -->
+        <div class="nav">
+            <img src="../logo.png" alt="Game Logo" class="logo">
+            <button type="button" class="bt" id="quitBtn">Quit</button>
+            <button type="button" id="musicBtn" class="music-btn">🔊</button>
+        </div>
+
+        <!-- Game Container -->
+        <div class="container">
+            <h2>Word Scramble</h2>
+
+            <div class="content">
+                <!-- Scrambled Word -->
+                <p class="word"></p>
+
+                <!-- Game Details -->
+                <div class="details">
+                    <p class="hint">
+                        Hint: <span></span>
+                    </p>
+
+                    <p class="time">
+                        Time Left: <span><b>30</b>s</span>
+                    </p>
+
+                    <p class="score">
+                        Score: <b>0</b>
+                    </p>
+
+                    <p class="level">
+                        Level: <b>1</b>
+                    </p>
+                </div>
+
+                <!-- User Input -->
+                <input type="text" placeholder="Enter a valid word">
+
+                <!-- Action Buttons -->
+                <div class="buttons">
+                    <button type="button" class="refresh-word">
+                        Refresh Word
+                    </button>
+                    <button type="button" class="check-word">
+                        Check Word
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Box (Popup) -->
+    <div class="message-box" id="messageBox">
+        <div class="message-content">
+            <p id="messageText"></p>
+            <button type="button" id="closeMessage">OK</button>
+        </div>
+    </div>
+</body>
+</html>

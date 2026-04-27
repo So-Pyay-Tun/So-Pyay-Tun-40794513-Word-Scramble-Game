@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Scramble Game</title>
+  <link rel="stylesheet" href="Home_Page.css">
+  <script src="Js/Home_Page.js" defer></script>
+</head>
+<body>
+
+  <!--Background Music-->
+  <audio id="bgMusic" loop>
+    <source src="bg-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="bg">
+    <div class="nav">
+      <img src="../logo.png" class="logo">
+
+      <a href="Login.html"><button type="button">Quit</button></a>
+
+      <!--Music Toggle Button-->
+      <button id="musicBtn" class="music-btn">🔊</button>
+      
+    </div>
+      
+    <div class="main">
+      <small>Welcome to Word Scramble</small>
+      <h1>
+        Word Scramble is a word game where players rearrange jumbled letters 
+        to form valid words or phrases.<br>
+        It improves vocabulary, spelling, and problem-solving skills.
+      </h1>
+      <a href="Main.html"><button>Play Now</button></a>
+      <button id="featuresBtn">🎮 Game Features</button>
+    </div>
+  </div>
+    <div id="messageBox" class="message-box">
+    <p id="messageText"></p>
+    <button id="closeMessage">OK</button>
+</div>
+</body>
+</html>

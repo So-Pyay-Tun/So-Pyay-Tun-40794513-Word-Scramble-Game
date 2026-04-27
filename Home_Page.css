@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.bg{
+  height: 100vh;
+  width: 100%;
+  background-image: url(../bg2.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.logo{
+  width: 140px;
+  cursor: pointer;
+}
+button{
+  padding: 7px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: "Story Script", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  margin-left: 10px;
+}
+
+button:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+.nav{
+  width: 85%;
+  height: 15%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main{
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50% );
+}
+h1{
+  font-size: 18px;
+  margin: 10px 0 30px;
+  font-family: "Story Script", sans-serif;
+  letter-spacing: 1px;
+}
+small{
+  font-family: "Story Script", sans-serif;
+  font-size: 30px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.nav .music-btn{
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  padding: 0;
+  margin-left: -850px;
+  margin-right: -50px;
+  transition: 0.3s ease;
+}
+
+.message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #ffffff;
+    padding: 30px;
+    width: 340px;
+    border-radius: 20px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    transition: all 0.35s ease;
+}
+
+.message-box.active {
+    opacity: 1;
+    visibility: visible;
+    animation: popBounce 0.4s ease;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popBounce {
+    0% { transform: translate(-50%, -50%) scale(0.5); }
+    60% { transform: translate(-50%, -50%) scale(1.1); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.message-box button {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.message-box button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
