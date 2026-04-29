@@ -104,7 +104,7 @@ closeMessage.addEventListener("click", () => {
 
     // Redirect to login page if quit button was used
     if (redirectToHome) {
-        window.location.href = "Login.html";
+        window.location.href = "index.html";
     }
 });
 
